@@ -15,7 +15,6 @@ An application for generating email signatures using a Node.js backend (with Typ
 4. [Dockerized Deployment](#dockerized-deployment)
 
    - [docker-compose Configuration](#docker-compose-configuration)
-5. [Bulk Upload Feature](#bulk-upload-feature)
 
 ---
 
@@ -81,13 +80,6 @@ The test server runs at http://localhost:4000/webhook if enabled.
    ```bash
    docker-compose up --build
 
-
-### Webhook Test Server Setup
-1. **Run the Webhook Server:**
-   ```bash
-   npx ts-node backend/src/webhook/simpleWebhookServer.ts
-
-The test server runs at http://localhost:4000/webhook if enabled.
 
 
 
