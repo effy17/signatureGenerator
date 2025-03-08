@@ -72,7 +72,7 @@ The frontend dev server runs at http://localhost:8080.
 ### Webhook Test Server Setup
 1. **Run the Webhook Server:**
    ```bash
-   npx ts-node backend/src/webhook/simpleWebhookServer.ts
+   npx ts-node backend/src/webhook/bulkUploadServer/simpleWebhookServer.ts
 
 The test server runs at http://localhost:4000/webhook if enabled.
 
