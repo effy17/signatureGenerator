@@ -2,9 +2,16 @@ import Bull from 'bull';
 import { renderSignature } from './signatureService';
 import axios from 'axios';
 
+interface UserData {
+    fullName: string;
+    email: string;
+    phone?: string;
+    logo?: string;
+}
+
 interface JobData {
     templateId: string;
-    userData: any;
+    userData: UserData;
     callbackUrl: string;
 }
 
