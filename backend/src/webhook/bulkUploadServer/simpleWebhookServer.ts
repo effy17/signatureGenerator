@@ -8,4 +8,9 @@ app.post('/webhook', (req: Request, res: Response) => {
     res.sendStatus(200);
 });
 
+app.get('/webhook', (req: Request, res: Response) => {
+    res.send('Webhook server is up and awaiting POST requests!');
+});
+
+
 app.listen(4000, () => console.log('Webhook server running on port 4000'));
